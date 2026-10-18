@@ -1,0 +1,3640 @@
+.login-page {
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background: #f5f5f5;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-header h1 {
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.login-header p {
+  color: #666;
+  font-size: 14px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input {
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #e50914;
+  box-shadow: 0 0 0 2px rgba(229, 9, 20, 0.1);
+}
+
+.login-button {
+  margin-top: 10px;
+  padding: 13px;
+  border: none;
+  border-radius: 6px;
+  background: #e50914;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background: #b20710;
+}
+
+.login-button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.register-link p {
+  font-size: 14px;
+  color: #666;
+}
+
+.register-link a {
+  color: #e50914;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+/* =========================
+   REGISTER PAGE
+========================= */
+
+.register-page {
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background: #f5f5f5;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.register-header h1 {
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.register-header p {
+  color: #666;
+  font-size: 14px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.register-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.register-form .form-group label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.register-form .form-group input {
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+}
+
+.register-form .form-group input:focus {
+  border-color: #e50914;
+  box-shadow: 0 0 0 2px rgba(229, 9, 20, 0.1);
+}
+
+.register-button {
+  margin-top: 10px;
+  padding: 13px;
+  border: none;
+  border-radius: 6px;
+  background: #e50914;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.register-button:hover {
+  background: #b20710;
+}
+
+.register-button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.login-link p {
+  font-size: 14px;
+  color: #666;
+}
+
+.login-link a {
+  color: #e50914;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  height: 70px;
+  padding: 0 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #111;
+  color: white;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+
+.navbar-logo {
+  color: #e50914;
+  text-decoration: none;
+
+  font-size: 24px;
+  font-weight: 800;
+}
+
+/* Center navigation */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav-link {
+  color: #ddd;
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-link.active {
+  color: #e50914;
+}
+
+/* Right side */
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Login */
+
+.login-nav-button {
+  padding: 9px 18px;
+
+  color: white;
+  text-decoration: none;
+
+  border: 1px solid #e50914;
+  border-radius: 6px;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.login-nav-button:hover {
+  background: #e50914;
+}
+
+/* Register */
+
+.register-nav-button {
+  padding: 9px 18px;
+
+  background: #e50914;
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.register-nav-button:hover {
+  background: #b20710;
+}
+
+/* Logout */
+
+.logout-button {
+  padding: 9px 18px;
+
+  background: transparent;
+  color: white;
+
+  border: 1px solid #e50914;
+  border-radius: 6px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background: #e50914;
+}
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background: #111;
+  color: white;
+  padding: 35px 50px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-brand h2 {
+  margin: 0 0 8px;
+  color: #e50914;
+  font-size: 22px;
+}
+
+.footer-brand p {
+  margin: 0;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.footer-links {
+  text-align: right;
+}
+
+.footer-links p {
+  margin: 5px 0;
+  color: #aaa;
+  font-size: 13px;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    text-align: center;
+  }
+}
+/* =========================
+   HERO BANNER
+========================= */
+
+.hero-banner {
+  min-height: 500px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 60px 70px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url("/hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.hero-subtitle {
+  color: #e50914;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.hero-content h1 {
+  font-size: 52px;
+  line-height: 1.1;
+  margin: 0 0 20px;
+}
+
+.hero-description {
+  max-width: 550px;
+  color: #ddd;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  padding: 13px 28px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #e50914;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.hero-button:hover {
+  background: #b20710;
+  transform: translateY(-2px);
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .hero-banner {
+    min-height: 420px;
+    padding: 40px 25px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+}
+/* =========================
+   SEARCH BAR
+========================= */
+
+.search-section {
+  padding: 35px 20px;
+  background: #f5f5f5;
+}
+
+.search-container {
+  max-width: 800px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+
+  background: white;
+
+  border-radius: 8px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+  overflow: hidden;
+}
+
+.search-input {
+  flex: 1;
+
+  padding: 15px 18px;
+
+  border: none;
+  outline: none;
+
+  font-size: 15px;
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+.search-button {
+  padding: 15px 25px;
+
+  border: none;
+
+  background: #e50914;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.search-button:hover {
+  background: #b20710;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .search-container {
+    flex-direction: column;
+    box-shadow: none;
+  }
+
+  .search-input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .search-button {
+    width: 100%;
+  }
+}
+/* =========================
+   MOVIES PAGE
+========================= */
+
+.movies-page {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.movies-header {
+  text-align: center;
+  padding: 45px 20px 15px;
+}
+
+.movies-header h1 {
+  margin: 0 0 10px;
+
+  font-size: 38px;
+  color: #111;
+}
+
+.movies-header p {
+  margin: 0;
+
+  color: #666;
+  font-size: 15px;
+}
+
+.movies-section {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 20px 30px 60px;
+}
+
+.movies-grid {
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(220px, 1fr)
+  );
+
+  gap: 30px;
+}
+/* =========================
+   HOME MOVIE SECTION
+========================= */
+
+.movie-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 30px 70px;
+}
+
+.movie-section-header {
+  margin-bottom: 30px;
+}
+
+.movie-section-header h2 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  color: #111;
+}
+
+.movie-section-header p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.home-movies-grid {
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  );
+
+  gap: 25px;
+}
+/* =========================
+   MOVIE CARD
+========================= */
+
+.movie-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.movie-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Poster */
+
+.movie-poster {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.movie-poster img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.3s;
+}
+
+.movie-card:hover .movie-poster img {
+  transform: scale(1.05);
+}
+
+/* Rating */
+
+.movie-rating {
+  position: absolute;
+
+  top: 12px;
+  right: 12px;
+
+  padding: 6px 9px;
+
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+
+  border-radius: 5px;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Content */
+
+.movie-card-content {
+  padding: 18px;
+}
+
+.movie-card-content h2 {
+  margin: 0 0 15px;
+
+  font-size: 20px;
+  color: #111;
+}
+
+/* Movie information */
+
+.movie-info {
+  margin-bottom: 18px;
+}
+
+.movie-info p {
+  margin: 7px 0;
+
+  color: #666;
+
+  font-size: 13px;
+}
+
+.movie-info strong {
+  color: #333;
+}
+
+/* Details button */
+
+.movie-details-button {
+  display: inline-block;
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 10px;
+
+  text-align: center;
+
+  background: #e50914;
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: background 0.2s;
+}
+
+.movie-details-button:hover {
+  background: #b20710;
+}
+/* =========================
+   MOVIE DETAILS
+========================= */
+
+.movie-details-page {
+  min-height: 70vh;
+  padding: 60px 30px;
+  background: #f5f5f5;
+}
+
+.movie-details {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 60px;
+
+  padding: 40px;
+
+  background: white;
+  border-radius: 12px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Poster */
+
+.movie-details-poster img {
+  width: 100%;
+  height: 500px;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+}
+
+/* Content */
+
+.movie-details-content {
+  padding: 10px 0;
+}
+
+.movie-details-label {
+  margin: 0 0 10px;
+
+  color: #e50914;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.movie-details-content h1 {
+  margin: 0 0 15px;
+
+  font-size: 42px;
+  color: #111;
+}
+
+.movie-details-rating {
+  display: inline-block;
+
+  padding: 7px 12px;
+  margin-bottom: 25px;
+
+  background: #111;
+  color: white;
+
+  border-radius: 5px;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Movie information */
+
+.movie-details-info {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+
+  padding: 15px 0;
+}
+
+.movie-details-info p {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 12px 0;
+
+  font-size: 14px;
+}
+
+.movie-details-info strong {
+  color: #333;
+}
+
+.movie-details-info span {
+  color: #666;
+}
+
+/* Description */
+
+.movie-description {
+  margin-top: 25px;
+}
+
+.movie-description h3 {
+  margin-bottom: 10px;
+
+  font-size: 18px;
+}
+
+.movie-description p {
+  color: #666;
+
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* Shows button */
+
+.shows-button {
+  margin-top: 20px;
+
+  padding: 13px 28px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #e50914;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.shows-button:hover {
+  background: #b20710;
+  transform: translateY(-2px);
+}
+
+/* Loading */
+
+.movie-loading {
+  min-height: 70vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #f5f5f5;
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+  .movie-details {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 25px;
+  }
+
+  .movie-details-poster {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .movie-details-poster img {
+    height: 430px;
+  }
+
+  .movie-details-content h1 {
+    font-size: 32px;
+  }
+}
+/* =========================
+   SHOWS PAGE
+========================= */
+
+.shows-page {
+  min-height: 70vh;
+  padding: 50px 30px 70px;
+  background: #f5f5f5;
+}
+
+.shows-header {
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.shows-label {
+  margin-bottom: 8px;
+
+  color: #e50914;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.shows-header h1 {
+  margin: 0 0 10px;
+
+  font-size: 38px;
+  color: #111;
+}
+
+.shows-header > p:last-child {
+  margin: 0;
+
+  color: #666;
+  font-size: 15px;
+}
+
+/* Shows grid */
+
+.shows-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(280px, 1fr)
+  );
+
+  gap: 25px;
+}
+
+/* Show card */
+
+.show-card {
+  padding: 25px;
+
+  background: white;
+
+  border-radius: 10px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.show-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+
+.show-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.show-date {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.show-price {
+  padding: 6px 10px;
+
+  background: #111;
+  color: white;
+
+  border-radius: 5px;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Time */
+
+.show-time {
+  margin-bottom: 20px;
+
+  font-size: 30px;
+  font-weight: 700;
+
+  color: #e50914;
+}
+
+/* Details */
+
+.show-details {
+  padding: 15px 0;
+
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.show-details p {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 10px 0;
+
+  font-size: 14px;
+}
+
+.show-details strong {
+  color: #333;
+}
+
+.show-details span {
+  color: #666;
+}
+
+/* Select seats */
+
+.select-seats-button {
+  width: 100%;
+
+  margin-top: 20px;
+
+  padding: 12px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #e50914;
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background 0.2s;
+}
+
+.select-seats-button:hover {
+  background: #b20710;
+}
+
+/* No shows */
+
+.no-shows {
+  max-width: 600px;
+  margin: 0 auto;
+
+  padding: 50px 30px;
+
+  background: white;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.no-shows h2 {
+  margin-bottom: 10px;
+}
+
+.no-shows p {
+  color: #666;
+}
+/* =========================
+   SEAT SELECTION
+========================= */
+
+.seat-page {
+  min-height: 70vh;
+  padding: 50px 30px 70px;
+  background: #f5f5f5;
+}
+
+.seat-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.seat-label {
+  margin-bottom: 8px;
+
+  color: #e50914;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.seat-header h1 {
+  margin: 0 0 10px;
+
+  font-size: 38px;
+  color: #111;
+}
+
+.seat-header > p:last-child {
+  margin: 0;
+
+  color: #666;
+}
+
+/* =========================
+   SCREEN
+========================= */
+
+.screen-section {
+  max-width: 700px;
+  margin: 0 auto 35px;
+
+  text-align: center;
+}
+
+.screen {
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #222;
+  color: white;
+
+  border-radius: 50% 50% 5px 5px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.screen-hint {
+  margin-top: 10px;
+
+  color: #888;
+
+  font-size: 13px;
+}
+
+/* =========================
+   SEAT LEGEND
+========================= */
+
+.seat-legend {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  margin-bottom: 30px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 13px;
+  color: #555;
+}
+
+.legend-box {
+  width: 18px;
+  height: 18px;
+
+  display: inline-block;
+
+  border-radius: 4px;
+}
+
+.legend-box.available {
+  background: #ddd;
+}
+
+.legend-box.selected {
+  background: #e50914;
+}
+
+.legend-box.booked {
+  background: #555;
+}
+
+/* =========================
+   SEAT GRID
+========================= */
+
+.seat-layout {
+  max-width: 800px;
+
+  margin: 0 auto 40px;
+
+  padding: 30px;
+
+  display: grid;
+
+  grid-template-columns: repeat(
+    8,
+    minmax(40px, 1fr)
+  );
+
+  gap: 12px;
+
+  background: white;
+
+  border-radius: 12px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.seat {
+  height: 42px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  transition: 0.2s;
+}
+
+/* Available */
+
+.seat-available {
+  background: #ddd;
+  color: #333;
+
+  cursor: pointer;
+}
+
+.seat-available:hover {
+  background: #bbb;
+  transform: translateY(-2px);
+}
+
+/* Selected */
+
+.seat-selected {
+  background: #e50914;
+  color: white;
+
+  cursor: pointer;
+}
+
+/* Booked */
+
+.seat-booked {
+  background: #555;
+  color: white;
+
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+/* =========================
+   BOOKING SUMMARY
+========================= */
+
+.booking-summary {
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  padding: 30px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 280px;
+
+  gap: 40px;
+
+  background: white;
+
+  border-radius: 12px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.booking-summary h2 {
+  margin-top: 0;
+
+  font-size: 22px;
+}
+
+.booking-summary p {
+  color: #555;
+
+  font-size: 14px;
+}
+
+.empty-selection {
+  color: #999 !important;
+}
+
+/* Selected seat list */
+
+.selected-seat-list {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 10px;
+}
+
+.selected-seat-list span {
+  padding: 7px 10px;
+
+  background: #e50914;
+  color: white;
+
+  border-radius: 5px;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* =========================
+   PAYMENT
+========================= */
+
+.payment-section h3 {
+  margin-top: 0;
+
+  font-size: 17px;
+}
+
+.payment-select {
+  width: 100%;
+
+  padding: 11px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 6px;
+
+  background: white;
+
+  font-size: 14px;
+
+  outline: none;
+}
+
+.payment-select:focus {
+  border-color: #e50914;
+}
+
+.confirm-booking-button {
+  width: 100%;
+
+  margin-top: 15px;
+
+  padding: 12px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #e50914;
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.confirm-booking-button:hover {
+  background: #b20710;
+}
+
+.confirm-booking-button:disabled {
+  background: #999;
+
+  cursor: not-allowed;
+}
+
+/* =========================
+   NO SEATS
+========================= */
+
+.no-seats {
+  max-width: 600px;
+
+  margin: 0 auto 40px;
+
+  padding: 40px;
+
+  background: white;
+
+  border-radius: 10px;
+
+  text-align: center;
+}
+
+.no-seats p {
+  color: #666;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .seat-page {
+    padding: 35px 15px 50px;
+  }
+
+  .seat-header h1 {
+    font-size: 30px;
+  }
+
+  .seat-legend {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .seat-layout {
+    padding: 20px 10px;
+
+    grid-template-columns: repeat(
+      4,
+      1fr
+    );
+
+    gap: 8px;
+  }
+
+  .booking-summary {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+
+    padding: 20px;
+  }
+}
+/* =========================
+   MY BOOKINGS
+========================= */
+
+.bookings-page {
+  min-height: 70vh;
+  padding: 50px 30px 70px;
+  background: #f5f5f5;
+}
+
+.bookings-header {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.bookings-label {
+  margin-bottom: 8px;
+
+  color: #e50914;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.bookings-header h1 {
+  margin: 0 0 10px;
+
+  font-size: 38px;
+  color: #111;
+}
+
+.bookings-header > p:last-child {
+  margin: 0;
+
+  color: #666;
+  font-size: 15px;
+}
+
+/* =========================
+   BOOKINGS LIST
+========================= */
+
+.bookings-list {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 25px;
+}
+
+/* =========================
+   BOOKING CARD
+========================= */
+
+.booking-card {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+
+.booking-card-header {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 18px;
+
+  border-bottom: 1px solid #eee;
+}
+
+.booking-card-header h2 {
+  margin: 0;
+
+  font-size: 20px;
+}
+
+/* Status */
+
+.booking-status {
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.status-confirmed {
+  background: #e7f7ed;
+  color: #16833a;
+}
+
+.status-cancelled {
+  background: #fdeaea;
+  color: #d62828;
+}
+
+/* Movie */
+
+.booking-movie {
+  padding: 20px 0;
+}
+
+.booking-movie h3 {
+  margin: 0;
+
+  font-size: 24px;
+
+  color: #111;
+}
+
+/* =========================
+   BOOKING DETAILS
+========================= */
+
+.booking-details {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 18px;
+
+  padding: 20px 0;
+
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.booking-detail {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.booking-detail span {
+  color: #888;
+
+  font-size: 12px;
+
+  text-transform: uppercase;
+}
+
+.booking-detail strong {
+  color: #333;
+
+  font-size: 14px;
+}
+
+/* =========================
+   ACTIONS
+========================= */
+
+.booking-actions {
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 20px;
+}
+
+.view-ticket-button,
+.cancel-booking-button {
+  padding: 11px 20px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.view-ticket-button {
+  background: #e50914;
+  color: white;
+}
+
+.view-ticket-button:hover {
+  background: #b20710;
+}
+
+.cancel-booking-button {
+  background: #eee;
+  color: #333;
+}
+
+.cancel-booking-button:hover {
+  background: #ddd;
+}
+
+/* =========================
+   CANCELLED MESSAGE
+========================= */
+
+.cancelled-message {
+  margin: 18px 0 0;
+
+  padding: 12px;
+
+  background: #fdeaea;
+
+  color: #c62828;
+
+  border-radius: 6px;
+
+  font-size: 13px;
+}
+
+/* =========================
+   NO BOOKINGS
+========================= */
+
+.no-bookings {
+  max-width: 550px;
+
+  margin: 0 auto;
+
+  padding: 50px 30px;
+
+  background: white;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.no-bookings h2 {
+  margin-bottom: 10px;
+}
+
+.no-bookings p {
+  color: #666;
+
+  margin-bottom: 25px;
+}
+
+.browse-movies-button {
+  padding: 12px 25px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #e50914;
+  color: white;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.browse-movies-button:hover {
+  background: #b20710;
+}
+
+/* =========================
+   LOADING
+========================= */
+
+.bookings-loading {
+  min-height: 60vh;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+  .bookings-page {
+    padding: 35px 15px 50px;
+  }
+
+  .bookings-header h1 {
+    font-size: 30px;
+  }
+
+  .booking-card {
+    padding: 20px;
+  }
+
+  .booking-card-header {
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .booking-card-header h2 {
+    font-size: 17px;
+  }
+
+  .booking-details {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-actions {
+    flex-direction: column;
+  }
+
+  .view-ticket-button,
+  .cancel-booking-button {
+    width: 100%;
+  }
+}
+/* =========================
+   BOOKING TICKET
+========================= */
+
+.ticket-page {
+  min-height: 70vh;
+
+  padding: 50px 20px 70px;
+
+  background: #f5f5f5;
+}
+
+.ticket-card {
+  max-width: 750px;
+
+  margin: 0 auto;
+
+  background: white;
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   TICKET HEADER
+========================= */
+
+.ticket-header {
+  padding: 30px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  background: #111;
+
+  color: white;
+}
+
+.ticket-label {
+  margin: 0 0 8px;
+
+  color: #e50914;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.ticket-header h1 {
+  margin: 0;
+
+  font-size: 30px;
+}
+
+/* Status */
+
+.ticket-status {
+  padding: 7px 13px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.ticket-confirmed {
+  background: #dff7e7;
+
+  color: #16833a;
+}
+
+.ticket-cancelled {
+  background: #fde2e2;
+
+  color: #c62828;
+}
+
+/* =========================
+   BOOKING ID
+========================= */
+
+.ticket-booking-id {
+  padding: 14px 30px;
+
+  background: #fafafa;
+
+  border-bottom: 1px dashed #ccc;
+
+  color: #777;
+
+  font-size: 13px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.ticket-section,
+.ticket-seats,
+.transaction-section {
+  padding: 25px 30px;
+
+  border-bottom: 1px solid #eee;
+}
+
+.ticket-section h3,
+.ticket-seats h3,
+.transaction-section h3 {
+  margin: 0 0 20px;
+
+  font-size: 17px;
+
+  color: #222;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.ticket-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+.ticket-grid div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.ticket-grid span,
+.ticket-payment span {
+  color: #888;
+
+  font-size: 12px;
+
+  text-transform: uppercase;
+}
+
+.ticket-grid strong,
+.ticket-payment strong {
+  color: #333;
+
+  font-size: 14px;
+}
+
+/* =========================
+   SEATS
+========================= */
+
+.ticket-seat-list {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+.ticket-seat-list span {
+  padding: 9px 14px;
+
+  background: #e50914;
+
+  color: white;
+
+  border-radius: 6px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+/* =========================
+   PAYMENT SUMMARY
+========================= */
+
+.ticket-payment {
+  padding: 25px 30px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  background: #fafafa;
+}
+
+.ticket-payment div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+.ticket-payment strong {
+  font-size: 18px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.ticket-footer {
+  padding: 25px 30px;
+
+  text-align: center;
+}
+
+.ticket-footer p {
+  margin-bottom: 20px;
+
+  color: #666;
+
+  font-size: 13px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.back-bookings-button {
+  padding: 11px 22px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #e50914;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.back-bookings-button:hover {
+  background: #b20710;
+}
+
+/* =========================
+   LOADING
+========================= */
+
+.ticket-loading {
+  min-height: 60vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+/* =========================
+   NOT FOUND
+========================= */
+
+.ticket-not-found {
+  max-width: 500px;
+
+  margin: 80px auto;
+
+  padding: 40px;
+
+  background: white;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .ticket-page {
+    padding: 30px 15px 50px;
+  }
+
+  .ticket-header {
+    flex-direction: column;
+
+    gap: 20px;
+
+    padding: 25px;
+  }
+
+  .ticket-header h1 {
+    font-size: 24px;
+  }
+
+  .ticket-section,
+  .ticket-seats,
+  .transaction-section {
+    padding: 22px;
+  }
+
+  .ticket-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ticket-payment {
+    flex-direction: column;
+
+    padding: 22px;
+  }
+
+  .ticket-footer {
+    padding: 22px;
+  }
+
+}
+/* =========================
+   REGISTER PAGE
+========================= */
+
+.register-page {
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background: #f5f5f5;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.register-header h1 {
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.register-header p {
+  color: #666;
+  font-size: 14px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.register-button {
+  margin-top: 10px;
+  padding: 13px;
+  border: none;
+  border-radius: 6px;
+  background: #e50914;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.register-button:hover {
+  background: #b20710;
+}
+
+.register-button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.login-link p {
+  font-size: 14px;
+  color: #666;
+}
+
+.login-link a {
+  color: #e50914;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+/* =========================================
+   ADMIN DASHBOARD
+   ========================================= */
+
+.admin-dashboard {
+  min-height: 100vh;
+  padding: 50px 7%;
+  background: #f5f6fa;
+}
+
+
+/* Header */
+
+.admin-header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.admin-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.admin-header p {
+  font-size: 17px;
+  color: #666;
+}
+
+
+/* Grid */
+
+.admin-grid {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+
+/* Cards */
+
+.admin-card {
+  background: white;
+
+  padding: 30px 25px;
+
+  border-radius: 12px;
+
+  text-decoration: none;
+
+  color: #222;
+
+  border: 1px solid #e5e5e5;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.06);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+
+/* Card hover */
+
+.admin-card:hover {
+
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.12);
+
+  background: #fafafa;
+}
+
+
+/* Card heading */
+
+.admin-card h2 {
+
+  margin-bottom: 12px;
+
+  font-size: 22px;
+
+  color: #222;
+}
+
+
+/* Card description */
+
+.admin-card p {
+
+  margin: 0;
+
+  color: #777;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+  .admin-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  .admin-dashboard {
+
+    padding: 35px 20px;
+
+  }
+
+
+  .admin-header h1 {
+
+    font-size: 28px;
+
+  }
+
+
+  .admin-header p {
+
+    font-size: 15px;
+
+  }
+
+
+  .admin-grid {
+
+    grid-template-columns:
+      1fr;
+
+    gap: 18px;
+
+  }
+
+
+  .admin-card {
+
+    padding: 25px 20px;
+
+  }
+
+}
+/* =========================================
+   ADMIN MOVIES PAGE
+   ========================================= */
+
+.admin-movies {
+  padding: 40px 60px;
+  min-height: 80vh;
+}
+
+.admin-movies h1 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 32px;
+}
+
+
+/* =========================================
+   MOVIE FORM
+   ========================================= */
+
+.admin-movie-form {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.admin-movie-form h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.admin-movie-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.admin-movie-form input,
+.admin-movie-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.admin-movie-form textarea {
+  min-height: 120px;
+  resize: vertical;
+  grid-column: span 2;
+}
+
+.admin-movie-form input:focus,
+.admin-movie-form textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+
+/* =========================================
+   FORM BUTTONS
+   ========================================= */
+
+.admin-movie-form button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.admin-movie-form button[type="submit"] {
+  background: #007bff;
+  color: white;
+}
+
+.admin-movie-form button[type="submit"]:hover {
+  background: #0056b3;
+}
+
+.admin-movie-form button[type="button"] {
+  background: #6c757d;
+  color: white;
+}
+
+.admin-movie-form button[type="button"]:hover {
+  background: #545b62;
+}
+
+.admin-movie-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* =========================================
+   MOVIE LIST
+   ========================================= */
+
+.admin-movie-list {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.admin-movie-list h2 {
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+
+/* =========================================
+   MOVIE GRID
+   ========================================= */
+
+.admin-movie-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+
+/* =========================================
+   MOVIE CARD
+   ========================================= */
+
+.admin-movie-card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.18);
+}
+
+.admin-movie-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.admin-movie-card h3 {
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.admin-movie-card p {
+  margin: 7px 0;
+  color: #555;
+}
+
+
+/* =========================================
+   CARD BUTTONS
+   ========================================= */
+
+.admin-movie-card button {
+  padding: 9px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-right: 8px;
+  font-weight: 600;
+}
+
+.admin-movie-card button:first-of-type {
+  background: #007bff;
+  color: white;
+}
+
+.admin-movie-card button:first-of-type:hover {
+  background: #0056b3;
+}
+
+.admin-movie-card button:last-of-type {
+  background: #dc3545;
+  color: white;
+}
+
+.admin-movie-card button:last-of-type:hover {
+  background: #b02a37;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 900px) {
+
+  .admin-movie-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .admin-movies {
+    padding: 30px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .admin-movies {
+    padding: 20px;
+  }
+
+  .admin-movie-form {
+    padding: 20px;
+  }
+
+  .admin-movie-form form {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-movie-form textarea {
+    grid-column: span 1;
+  }
+
+  .admin-movie-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-movie-card img {
+    height: 350px;
+  }
+}
+/* =========================================
+   ADMIN THEATERS
+========================================= */
+
+.admin-theaters {
+  padding: 40px 60px;
+  min-height: 70vh;
+}
+
+/* Page heading */
+
+.admin-theaters h1 {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+/* Add Theater button */
+
+.admin-add-button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: 0.2s;
+}
+
+.admin-add-button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* Theater grid */
+
+.admin-theater-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  );
+  gap: 25px;
+}
+
+/* Theater card */
+
+.admin-theater-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.2s;
+}
+
+.admin-theater-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Theater name */
+
+.admin-theater-card h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 23px;
+}
+
+/* Theater information */
+
+.admin-theater-card p {
+  margin: 10px 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+.admin-theater-card strong {
+  color: #222;
+}
+
+/* Buttons container */
+
+.admin-theater-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+/* Edit */
+
+.admin-edit-button {
+  background-color: #f59e0b;
+  color: white;
+  border: none;
+  padding: 9px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.admin-edit-button:hover {
+  background-color: #d97706;
+}
+
+/* Delete */
+
+.admin-delete-button {
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  padding: 9px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.admin-delete-button:hover {
+  background-color: #b91c1c;
+}
+
+/* No theaters */
+
+.admin-theaters > p {
+  margin-top: 30px;
+  color: #666;
+  font-size: 17px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .admin-theaters {
+    padding: 30px 20px;
+  }
+
+  .admin-theaters h1 {
+    font-size: 27px;
+  }
+
+  .admin-theater-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+/* =========================================
+   ADMIN COMMON PAGE
+========================================= */
+
+.admin-page {
+  min-height: 70vh;
+  padding: 40px 60px;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.admin-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.admin-page-header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.admin-page-header p {
+  margin-top: 8px;
+  color: #666;
+  font-size: 16px;
+}
+
+
+/* =========================================
+   ADD BUTTON
+========================================= */
+
+.admin-add-button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.admin-add-button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   TABLE CONTAINER
+========================================= */
+
+.admin-table-container {
+  width: 100%;
+  overflow-x: auto;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 750px;
+}
+
+
+/* TABLE HEADER */
+
+.admin-table thead {
+  background-color: #f3f4f6;
+}
+
+.admin-table th {
+  padding: 16px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 700;
+  color: #374151;
+  border-bottom: 1px solid #ddd;
+}
+
+
+/* TABLE BODY */
+
+.admin-table td {
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  color: #444;
+  font-size: 15px;
+}
+
+
+/* ROW HOVER */
+
+.admin-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+
+/* LAST ROW */
+
+.admin-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* =========================================
+   ACTION BUTTONS
+========================================= */
+
+.admin-table-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+
+/* EDIT */
+
+.admin-edit-button {
+  background-color: #f59e0b;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.admin-edit-button:hover {
+  background-color: #d97706;
+}
+
+
+/* DELETE */
+
+.admin-delete-button {
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.admin-delete-button:hover {
+  background-color: #b91c1c;
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.empty-state h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.empty-state p {
+  color: #666;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .admin-page {
+    padding: 30px 20px;
+  }
+
+  .admin-page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .admin-page-header h1 {
+    font-size: 27px;
+  }
+
+  .admin-add-button {
+    width: 100%;
+  }
+
+  .admin-table-container {
+    border-radius: 8px;
+  }
+
+}
+/* =========================================
+   ADMIN LIST PAGE
+   ========================================= */
+
+.admin-list-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 25px;
+  min-height: 70vh;
+}
+
+.admin-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.admin-list-header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #222;
+}
+
+.admin-list-header p {
+  margin-top: 8px;
+  color: #777;
+  font-size: 15px;
+}
+
+
+/* =========================================
+   ADD BUTTON
+   ========================================= */
+
+.admin-add-button {
+  display: inline-block;
+  background: #e50914;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.admin-add-button:hover {
+  background: #b20710;
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   TABLE CONTAINER
+   ========================================= */
+
+.admin-table-container {
+  width: 100%;
+  overflow-x: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   ADMIN TABLE
+   ========================================= */
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 850px;
+}
+
+.admin-table thead {
+  background: #222;
+  color: white;
+}
+
+.admin-table th {
+  padding: 15px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.admin-table td {
+  padding: 14px 15px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+  font-size: 14px;
+}
+
+.admin-table tbody tr:hover {
+  background: #f8f8f8;
+}
+
+.admin-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* =========================================
+   ACTIONS
+   ========================================= */
+
+.admin-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+/* =========================================
+   EDIT BUTTON
+   ========================================= */
+
+.admin-edit-button {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.admin-edit-button:hover {
+  background: #1d4ed8;
+}
+
+
+/* =========================================
+   DELETE BUTTON
+   ========================================= */
+
+.admin-delete-button {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.admin-delete-button:hover {
+  background: #b91c1c;
+}
+
+
+/* =========================================
+   EMPTY STATE
+   ========================================= */
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.empty-state h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.empty-state p {
+  color: #777;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  .admin-list-page {
+    padding: 25px 15px;
+  }
+
+  .admin-list-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-list-header h1 {
+    font-size: 26px;
+  }
+
+  .admin-add-button {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .admin-table-container {
+    border-radius: 8px;
+  }
+
+  .admin-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .admin-edit-button,
+  .admin-delete-button {
+    text-align: center;
+  }
+}
+/* =========================================
+   ADMIN FORM PAGE
+========================================= */
+
+.admin-page {
+  min-height: 70vh;
+  padding: 50px 8%;
+  background: #f5f7fb;
+}
+
+
+/* =========================================
+   FORM CONTAINER
+========================================= */
+
+.admin-form-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   FORM HEADER
+========================================= */
+
+.admin-form-header {
+  margin-bottom: 30px;
+}
+
+.admin-form-header h1 {
+  margin: 0;
+  font-size: 30px;
+  color: #222;
+}
+
+.admin-form-header p {
+  margin-top: 8px;
+  color: #777;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.admin-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-form-group label {
+  font-weight: 600;
+  color: #333;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.admin-form-group input,
+.admin-form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d5d9e0;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.2s;
+}
+
+.admin-form-group input:focus,
+.admin-form-group textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.admin-form-group textarea {
+  resize: vertical;
+}
+
+
+/* =========================================
+   BUTTON CONTAINER
+========================================= */
+
+.admin-form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+.admin-submit-button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.admin-submit-button:hover {
+  background: #1d4ed8;
+}
+
+.admin-submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* =========================================
+   CANCEL BUTTON
+========================================= */
+
+.admin-cancel-button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #e5e7eb;
+  color: #333;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.admin-cancel-button:hover {
+  background: #d1d5db;
+}
+
+
+/* =========================================
+   LOADING
+========================================= */
+
+.admin-loading {
+  text-align: center;
+  padding: 60px;
+  font-size: 20px;
+  color: #666;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .admin-page {
+    padding: 30px 15px;
+  }
+
+  .admin-form-container {
+    padding: 25px 20px;
+  }
+
+  .admin-form-header h1 {
+    font-size: 25px;
+  }
+
+  .admin-form-actions {
+    flex-direction: column;
+  }
+
+  .admin-submit-button,
+  .admin-cancel-button {
+    width: 100%;
+  }
+}
+/* =========================================
+   ADMIN FORM PAGE
+========================================= */
+
+.admin-form-page {
+  min-height: 70vh;
+  padding: 50px 8%;
+  background: #f5f6fa;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+/* =========================================
+   ADMIN FORM CARD
+========================================= */
+
+.admin-form-card {
+  width: 100%;
+  max-width: 650px;
+
+  background: white;
+
+  padding: 35px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.admin-form-card h1 {
+  margin: 0 0 8px;
+
+  font-size: 30px;
+
+  color: #222;
+}
+
+
+.admin-form-card > p {
+  margin-bottom: 30px;
+
+  color: #777;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  margin-bottom: 20px;
+}
+
+
+.form-group label {
+  margin-bottom: 8px;
+
+  font-weight: 600;
+
+  color: #333;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   INPUT + SELECT
+========================================= */
+
+.form-group input,
+.form-group select {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 12px 14px;
+
+  border: 1px solid #d5d5d5;
+
+  border-radius: 7px;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: 0.2s;
+}
+
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #1976d2;
+
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.1);
+}
+
+
+/* =========================================
+   FORM ACTIONS
+========================================= */
+
+.form-actions {
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 30px;
+}
+
+
+/* =========================================
+   SAVE BUTTON
+========================================= */
+
+.admin-save-button {
+  padding: 12px 22px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: #1976d2;
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+
+.admin-save-button:hover {
+  background: #125ca3;
+}
+
+
+.admin-save-button:disabled {
+  background: #9e9e9e;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================
+   CANCEL BUTTON
+========================================= */
+
+.admin-cancel-button {
+  padding: 12px 22px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: #e0e0e0;
+
+  color: #333;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+
+.admin-cancel-button:hover {
+  background: #cfcfcf;
+}
