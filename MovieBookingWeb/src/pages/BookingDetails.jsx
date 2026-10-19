@@ -4,7 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-import axios from "axios";
+import api from "../service/api";
 
 import { getBookedSeatNumbers } from "../service/bookingService";
 
@@ -21,8 +21,8 @@ function BookingDetails() {
       try {
         const token = localStorage.getItem("token");
 
-        const bookingResponse = await axios.get(
-          `http://localhost:8081/bookings/${bookingId}`,
+        const bookingResponse = await api.get(
+          `/bookings/${bookingId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

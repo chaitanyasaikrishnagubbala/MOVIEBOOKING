@@ -1,13 +1,13 @@
-import axios from "axios";
+import api from "./api";
 
-const BASE_URL = "http://localhost:8081/transactions";
+const BASE_URL = "/transactions";
 
 
 export const getAllTransactions = async () => {
 
   const token = localStorage.getItem("token");
 
-  const response = await axios.get(
+  const response = await api.get(
     BASE_URL,
     {
       headers: {
@@ -24,7 +24,7 @@ export const getTransactionById = async (id) => {
 
   const token = localStorage.getItem("token");
 
-  const response = await axios.get(
+  const response = await api.get(
     `${BASE_URL}/${id}`,
     {
       headers: {
@@ -34,4 +34,4 @@ export const getTransactionById = async (id) => {
   );
 
   return response.data;
-};
+};

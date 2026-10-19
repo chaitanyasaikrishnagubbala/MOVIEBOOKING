@@ -1,11 +1,8 @@
-import axios from "axios";
-
-const BASE_URL = "http://localhost:8081/users";
-const BASE_URL1 = "http://localhost:8081/auth/login";
+import api from "./api";
 
 export const register = async (userData) => {
   try {
-    const response = await axios.post(BASE_URL, userData);
+    const response = await api.post("/users", userData);
     console.log(response.data);
     return response.data;
   } catch (error) {
@@ -15,14 +12,11 @@ export const register = async (userData) => {
 
 export const login = async (loginData) => {
   try {
-    const response = await axios.post(
-      `${BASE_URL1}`,
-      loginData
-    );
+    const response = await api.post("/auth/login", loginData);
 
     console.log(response.data);
     return response.data;
   } catch (error) {
     throw error;
   }
-};
+};

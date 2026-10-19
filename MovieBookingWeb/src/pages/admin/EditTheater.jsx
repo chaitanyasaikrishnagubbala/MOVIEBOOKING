@@ -4,7 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
-import axios from "axios";
+import api from "../../service/api";
 
 function EditTheater() {
 
@@ -33,8 +33,8 @@ function EditTheater() {
 
         const token = localStorage.getItem("token");
 
-        const response = await axios.get(
-          `http://localhost:8081/theaters/${id}`,
+        const response = await api.get(
+          `/theaters/${id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -97,8 +97,8 @@ function EditTheater() {
 
       const token = localStorage.getItem("token");
 
-      await axios.put(
-        `http://localhost:8081/theaters/${id}`,
+      await api.put(
+        `/theaters/${id}`,
         theater,
         {
           headers: {

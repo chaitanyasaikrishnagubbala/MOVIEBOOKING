@@ -1,11 +1,11 @@
-import axios from "axios";
+import api from "./api";
 
-const BASE_URL = "http://localhost:8081/theaters";
+const BASE_URL = "/theaters";
 
 export const getAllTheaters = async () => {
   const token = localStorage.getItem("token");
 
-  const response = await axios.get(BASE_URL, {
+  const response = await api.get(BASE_URL, {
     headers: {
       Authorization: `Bearer ${token}`,
     },
@@ -17,11 +17,11 @@ export const getAllTheaters = async () => {
 export const deleteTheater = async (id) => {
   const token = localStorage.getItem("token");
 
-  const response = await axios.delete(`${BASE_URL}/${id}`, {
+  const response = await api.delete(`${BASE_URL}/${id}`, {
     headers: {
       Authorization: `Bearer ${token}`,
     },
   });
 
   return response.data;
-};
+};

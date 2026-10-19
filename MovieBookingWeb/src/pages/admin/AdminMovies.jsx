@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import axios from "axios";
+import api from "../../service/api";
 
-const BASE_URL = "http://localhost:8081/movies";
+const BASE_URL = "/movies";
 
 const emptyMovie = {
   title: "",
@@ -34,7 +34,7 @@ function AdminMovies() {
 
       const token = localStorage.getItem("token");
 
-      const response = await axios.get(BASE_URL, {
+      const response = await api.get(BASE_URL, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -95,7 +95,7 @@ function AdminMovies() {
       if (editingId) {
 
         // UPDATE
-        await axios.put(
+        await api.put(
           `${BASE_URL}/${editingId}`,
           movieData,
           {
@@ -110,7 +110,7 @@ function AdminMovies() {
       } else {
 
         // CREATE
-        await axios.post(
+        await api.post(
           BASE_URL,
           movieData,
           {
@@ -193,7 +193,7 @@ function AdminMovies() {
 
       const token = localStorage.getItem("token");
 
-      await axios.delete(
+      await api.delete(
         `${BASE_URL}/${id}`,
         {
           headers: {

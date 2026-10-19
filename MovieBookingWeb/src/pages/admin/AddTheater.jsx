@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
-import axios from "axios";
+import api from "../../service/api";
 
 function AddTheater() {
 
@@ -39,8 +39,8 @@ function AddTheater() {
 
       const token = localStorage.getItem("token");
 
-      await axios.post(
-        "http://localhost:8081/theaters",
+      await api.post(
+        "/theaters",
         theater,
         {
           headers: {

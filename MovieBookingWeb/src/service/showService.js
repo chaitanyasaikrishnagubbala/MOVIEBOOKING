@@ -1,12 +1,12 @@
-import axios from "axios";
+import api from "./api";
 
-const BASE_URL = "http://localhost:8081/shows";
+const BASE_URL = "/shows";
 
 export const getShowsByMovieId = async (movieId) => {
   try {
     const token = localStorage.getItem("token");
 
-    const response = await axios.get(
+    const response = await api.get(
       `${BASE_URL}/movie/${movieId}`,
       {
         headers: {
@@ -26,7 +26,7 @@ export const getAllShows = async () => {
 
   const token = localStorage.getItem("token");
 
-  const response = await axios.get(
+  const response = await api.get(
     BASE_URL,
     {
       headers: {
@@ -44,7 +44,7 @@ export const getShowById = async (id) => {
 
   const token = localStorage.getItem("token");
 
-  const response = await axios.get(
+  const response = await api.get(
     `${BASE_URL}/${id}`,
     {
       headers: {
@@ -62,7 +62,7 @@ export const addShow = async (showData) => {
 
   const token = localStorage.getItem("token");
 
-  const response = await axios.post(
+  const response = await api.post(
     BASE_URL,
     showData,
     {
@@ -81,7 +81,7 @@ export const updateShow = async (id, showData) => {
 
   const token = localStorage.getItem("token");
 
-  const response = await axios.put(
+  const response = await api.put(
     `${BASE_URL}/${id}`,
     showData,
     {
@@ -100,7 +100,7 @@ export const deleteShow = async (id) => {
 
   const token = localStorage.getItem("token");
 
-  const response = await axios.delete(
+  const response = await api.delete(
     `${BASE_URL}/${id}`,
     {
       headers: {
@@ -110,4 +110,4 @@ export const deleteShow = async (id) => {
   );
 
   return response.data;
-};
+};

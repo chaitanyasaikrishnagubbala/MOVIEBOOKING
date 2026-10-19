@@ -1,12 +1,12 @@
-import axios from "axios";
+import api from "./api";
 
-const BASE_URL = "http://localhost:8081/screens";
+const BASE_URL = "/screens";
 
 export const getAllScreens = async () => {
 
     const token = localStorage.getItem("token");
 
-    const response = await axios.get(BASE_URL, {
+    const response = await api.get(BASE_URL, {
         headers: {
             Authorization: `Bearer ${token}`,
         },
@@ -20,7 +20,7 @@ export const getScreenById = async (id) => {
 
     const token = localStorage.getItem("token");
 
-    const response = await axios.get(
+    const response = await api.get(
         `${BASE_URL}/${id}`,
         {
             headers: {
@@ -37,7 +37,7 @@ export const addScreen = async (screenData) => {
 
     const token = localStorage.getItem("token");
 
-    const response = await axios.post(
+    const response = await api.post(
         BASE_URL,
         screenData,
         {
@@ -55,7 +55,7 @@ export const updateScreen = async (id, screenData) => {
 
     const token = localStorage.getItem("token");
 
-    const response = await axios.put(
+    const response = await api.put(
         `${BASE_URL}/${id}`,
         screenData,
         {
@@ -73,7 +73,7 @@ export const deleteScreen = async (id) => {
 
     const token = localStorage.getItem("token");
 
-    const response = await axios.delete(
+    const response = await api.delete(
         `${BASE_URL}/${id}`,
         {
             headers: {
@@ -83,4 +83,4 @@ export const deleteScreen = async (id) => {
     );
 
     return response.data;
-};
+};

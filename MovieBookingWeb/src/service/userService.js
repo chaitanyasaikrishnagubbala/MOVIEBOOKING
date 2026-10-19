@@ -1,6 +1,6 @@
-import axios from "axios";
+import api from "./api";
 
-const BASE_URL = "http://localhost:8081/users";
+const BASE_URL = "/users";
 
 
 // =========================
@@ -11,7 +11,7 @@ export const getCurrentUser = async () => {
 
   const token = localStorage.getItem("token");
 
-  const response = await axios.get(
+  const response = await api.get(
     `${BASE_URL}/me`,
     {
       headers: {
@@ -34,7 +34,7 @@ export const getAllUsers = async () => {
 
     const token = localStorage.getItem("token");
 
-    const response = await axios.get(
+    const response = await api.get(
       BASE_URL,
       {
         headers: {
@@ -67,7 +67,7 @@ export const getUserById = async (id) => {
 
     const token = localStorage.getItem("token");
 
-    const response = await axios.get(
+    const response = await api.get(
       `${BASE_URL}/${id}`,
       {
         headers: {
@@ -100,7 +100,7 @@ export const updateUser = async (id, userData) => {
 
     const token = localStorage.getItem("token");
 
-    const response = await axios.put(
+    const response = await api.put(
       `${BASE_URL}/${id}`,
       userData,
       {
@@ -134,7 +134,7 @@ export const deleteUser = async (id) => {
 
     const token = localStorage.getItem("token");
 
-    const response = await axios.delete(
+    const response = await api.delete(
       `${BASE_URL}/${id}`,
       {
         headers: {

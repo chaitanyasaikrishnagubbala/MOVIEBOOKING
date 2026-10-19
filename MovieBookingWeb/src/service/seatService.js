@@ -1,12 +1,12 @@
-import axios from "axios";
+import api from "./api";
 
-const BASE_URL = "http://localhost:8081/seats";
+const BASE_URL = "/seats";
 
 export const getSeatsByScreen = async (screenId) => {
   try {
     const token = localStorage.getItem("token");
 
-    const response = await axios.get(
+    const response = await api.get(
       `${BASE_URL}/screen/${screenId}`,
       {
         headers: {
@@ -26,7 +26,7 @@ export const getAllSeats = async () => {
   try {
     const token = localStorage.getItem("token");
 
-    const response = await axios.get(
+    const response = await api.get(
       BASE_URL,
       {
         headers: {
@@ -48,7 +48,7 @@ export const getSeatById = async (id) => {
   try {
     const token = localStorage.getItem("token");
 
-    const response = await axios.get(
+    const response = await api.get(
       `${BASE_URL}/${id}`,
       {
         headers: {
@@ -70,7 +70,7 @@ export const addSeat = async (seatData) => {
   try {
     const token = localStorage.getItem("token");
 
-    const response = await axios.post(
+    const response = await api.post(
       BASE_URL,
       seatData,
       {
@@ -93,7 +93,7 @@ export const updateSeat = async (id, seatData) => {
   try {
     const token = localStorage.getItem("token");
 
-    const response = await axios.put(
+    const response = await api.put(
       `${BASE_URL}/${id}`,
       seatData,
       {
@@ -116,7 +116,7 @@ export const deleteSeat = async (id) => {
   try {
     const token = localStorage.getItem("token");
 
-    const response = await axios.delete(
+    const response = await api.delete(
       `${BASE_URL}/${id}`,
       {
         headers: {
@@ -130,4 +130,4 @@ export const deleteSeat = async (id) => {
     console.error("Delete Seat Error:", error.response);
     throw error;
   }
-};
+};
